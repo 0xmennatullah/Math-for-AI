@@ -23,6 +23,8 @@
   - ![mat reduction](./img/image-2.png)
 
 #### row echelon form
+``` zero rows are at the bottom, and the leading entry (the first non-zero number) in each non-zero row is to the right of the leading entry in the row above it``` 
+
 ##### preserving singularity
   - ![gen form](./img/image-3.png)
   - it preserves singularity, doesn't affect it, just changes the determinent's sign or so.
