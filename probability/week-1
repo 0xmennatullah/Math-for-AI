@@ -1,7 +1,82 @@
 # what's probability?
 ## week-1
+### lesson 1
 - ![fund](image.png)
 - complement: the opposite of the original prob/ 1-orig. prob
 - joint events: overlapping the probability - the commons
   - ![joints](image-1.png)
-- independence: 
+- independence: always prob is same fraction as actual existance
+
+### lesson 2
+#### bionomial distribution
+- obtaining 2 heads outta 5 flips of coins?
+  - there's 10 ways to get 2 heads within 5 flips! like 10 arrangements, each coin has the same prob -> 1/32
+  - so we get: 
+    - 5!: no. ways to order 5 coins
+    - /2! -> to rmv every repetetion of swapping heads position
+    - /!3 -> to rmv // // // tail position
+  - ![bio](image-2.png)
+- ![gnr](image-3.png)
+
+#### gaussian distribution
+- discrete: models only the success (X). -> probability mass function
+- contineous: area under interval aka sum of all probs of infinietly small patches of big problem -> probability density function
+##### probability density function
+  - calc probability between 2 points in continous functions
+  - ![diff](image-4.png)
+
+##### commulative probability
+  - ![comp](image-5.png)
+
+#### uniform distribution
+- all events has same frequency of occurance 
+
+### gaussian distru:
+- uses the exponential func as it's bell-shaped too, we can manipulate it
+- ![gauss](image-6.png)
+- when n is very large, bionomial distru can be approximated by normal or gaussian distribution
+- standarization: shifting thre bell into thwe standard values(m=0, o=1) => makes calculations mucu much easier
+
+## week-2
+### central tendency for random vars
+#### mean
+- mean == expected value(but in a weighted avg formula)
+- ![E](image-7.png) => for discrete random vars
+- fon continous => integral
+- ![E](image-8.png) => prob mass func VS prob density func
+- mean doesn't divide things upon their mass => but upon their spreadness
+
+#### median
+- ![median](image-9.png)
+- when avg is deceiving
+
+#### mode
+- highest prob
+- most frequent
+- might not be unique
+- ![mode](image-10.png)
+
+### for functions
+- just replace x => f(x)
+- ![ex](image-11.png)
+- ![ex2](image-12.png)
+- sum of expoectations = avg of all correct expectations = 1
+- expected value doesn't measure the spread of values
+
+#### spreadness of values
+1. deviation = diff between point and expected value
+      1.  => acknowledges the direction, but gfor quantity it's not worthy as most of the times=0, with absolute value => still doesn't really give the meant info.
+2. squared deviation: same of absolute dev but wo math complications (x - E(x)^2)
+3. VARIENCE: E((x - E(x)^2))=> [E = avg of square deviation] => VARIENCE.
+   1. ![var](image-13.png)
+   2. multiplying x by value => changes variance by value^2
+   3. everything is better when mean = 0 not meo
+4. standard deviation: sqr(variance)
+     1. everything is better when it's = 1 => devide x by the value of std.
+     2. ![std](image-14.png)
+     3. ![standarization](image-15.png)
+5. skeweness: 
+      1. moments of distribution: ![mod](image-16.png) 
+      2. third moment -> shows if a value is skewed to the right or to the left with large value
+      3. should be standarized too![skew](image-17.png)
+      4. 
